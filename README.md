@@ -1,4 +1,4 @@
-# OUISTITI v1.0
+# OUISTITI v1.0.1
 Avoir une photo de la webcam juste avec un lien malveillant.
 <p>Pour mes confrères de Instant-Hack
 
