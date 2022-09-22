@@ -1,5 +1,5 @@
 # OUISTITI v1.0
-Avoir une photo de la webcam juste avec un lien malveillant
+Avoir une photo de la webcam juste avec un lien malveillant.
 Pour mes confrères de Instant-Hack
 
 # Comment ça marche ?
