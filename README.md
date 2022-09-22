@@ -13,7 +13,7 @@ Pour mes confrères de Instant-Hack
 ## INSTALLATION (Kali Linux IH):
 
 ```
-git clone https://github.com/stan2702/ouistiti
+git clone https://github.com/stan2702/ouistiti.git
 cd ouistiti
 bash ouistiti
 ```
