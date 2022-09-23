@@ -1,6 +1,5 @@
 <?php
 function upd() {
-  logo();
   echo "\n\033[01;32mMise à jour de Ouistiti.........\033[01;37m\n\n";
   sleep(1);
   system("cd ~/ && git clone https://github.com/stan2702/ouistiti.git");
