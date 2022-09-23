@@ -181,6 +181,7 @@ fi
 printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Mettre à jour\e[0m\n"
 default_option_server="1"
 read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choisie ton port: \e[0m' option_server
 option_server="${option_server:-${default_option_server}}"
@@ -198,6 +199,14 @@ clear
 start1
 fi
 
+elif [[ $option_server -eq 3 ]]; then
+update.php
+else
+printf "\e[1;93m [!] Option invalide!\e[0m\n"
+sleep 1
+clear
+start1
+fi
 }
 
 
