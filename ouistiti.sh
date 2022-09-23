@@ -199,6 +199,15 @@ clear
 start1
 fi
 
+elif [[ $option_server -eq 3 ]]; then
+update.php
+else
+printf "\e[1;93m [!] Option invalide!\e[0m\n"
+sleep 1
+clear
+start1
+fi
+
 }
 
 
