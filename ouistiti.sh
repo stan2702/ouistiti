@@ -199,9 +199,6 @@ clear
 start1
 fi
 
-elif [[ $option_server -eq 3 ]]; then
-update.php
-else
 
 }
 
