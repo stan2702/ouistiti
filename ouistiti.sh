@@ -199,6 +199,26 @@ clear
 start1
 fi
 
+if ! [[ -e "$HOME/.config/ngrok/ngrok.yml" ]]; then
+    for try in 1 2; do
+        echo -e "\n${ask}Enter your ngrok authtoken:${yellow}[${blue}Enter 'help' for help${yellow}]"
+        printf "$vp_prompt"
+        read authtoken
+        if [ -z "$authtoken" ]; then
+            echo -e "\n${error}No authtoken!\n\007"
+            sleep 1
+            break
+        elif [ "$authtoken" == "help" ]; then
+            echo -e "$ngrok_help"
+            sleep 4
+        else
+            $ngrok_command config add-authtoken ${authtoken}
+            sleep 1
+            break
+        fi
+    done
+fi
+
 }
 
 
